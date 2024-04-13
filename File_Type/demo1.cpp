@@ -28,7 +28,7 @@ int writeFile(char *filename)
     if (exist(filepath) == TRUE)
     {
         printf("The file %s existed. Override it Y/N? :", filename);
-        if (toupper(getchar() == 'N'))
+        if (toupper(getchar()) == 'N')
             return FALSE;
     }
 
@@ -39,8 +39,8 @@ int writeFile(char *filename)
     // nhap gia tri vao phai trong khi chua nhan ctr+z
     do
     {
-        c = getchar(); // lay gia tri use nhap
-        if (c != CTR_Z) // neu gia tri do khong phai la ESC
+        c = getchar();   // lay gia tri use nhap
+        if (c != CTR_Z)  // neu gia tri do khong phai la ESC
             fputc(c, f); // them gia tri vao file
     } while (c != CTR_Z);
     fclose(f); // xoa cac du lieu trong bo dem dv file, dong file va giai phong bo nho dc sd vs file
