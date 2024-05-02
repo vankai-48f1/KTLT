@@ -11,6 +11,7 @@ void UpperWords(char *s)
             *(s) = toupper(*(s));
         if (*(s + i) == ' ' && *(s + i + 1) != ' ')
             *(s + i + 1) = toupper(*(s + i + 1));
+        else if 
     }
 }
 int main()
