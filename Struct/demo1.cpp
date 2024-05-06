@@ -94,5 +94,3 @@ int main()
 	// HAM: Xuat DSSV ra man hinh(xuat mang)
 	xuatDSSV(a, n);
 }
-// test merge commit
-// test merge commit 2
